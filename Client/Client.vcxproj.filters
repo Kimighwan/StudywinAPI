@@ -28,6 +28,12 @@
     <Filter Include="Engine\04. Object">
       <UniqueIdentifier>{5d1a568a-c7e4-4b0d-bd55-bc281081f1bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\03. Manager\TimerMgr">
+      <UniqueIdentifier>{93a6f8fb-c642-4518-a561-d61464b9b125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\KeyMgr">
+      <UniqueIdentifier>{88ae7f50-1ba1-4bf7-ad09-d62d3958366a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -57,6 +63,12 @@
     <ClInclude Include="Object.h">
       <Filter>Engine\04. Object</Filter>
     </ClInclude>
+    <ClInclude Include="TimerMgr.h">
+      <Filter>Engine\03. Manager\TimerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>Engine\03. Manager\KeyMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Client.rc">
@@ -80,6 +92,12 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerMgr.cpp">
+      <Filter>Engine\03. Manager\TimerMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>Engine\03. Manager\KeyMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

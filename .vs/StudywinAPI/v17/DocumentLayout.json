@@ -3,24 +3,56 @@
   "WorkspaceRootPath": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Core.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\TimerMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Core.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\TimerMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Object.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\KeyMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\KeyMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\struct.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A88A7DD8-B9FE-48EA-AF4B-102A1583524B}|Client\\Client.vcxproj|solutionrelative:Client\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +78,122 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "define.h",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\define.h",
+              "RelativeDocumentMoniker": "Client\\define.h",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\define.h",
+              "RelativeToolTip": "Client\\define.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-23T10:15:17.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimerMgr.cpp",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.cpp",
+              "RelativeDocumentMoniker": "Client\\TimerMgr.cpp",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.cpp",
+              "RelativeToolTip": "Client\\TimerMgr.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-22T13:05:07.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimerMgr.h",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.h",
+              "RelativeDocumentMoniker": "Client\\TimerMgr.h",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\TimerMgr.h",
+              "RelativeToolTip": "Client\\TimerMgr.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAewBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-18T03:45:22.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "KeyMgr.cpp",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.cpp",
+              "RelativeDocumentMoniker": "Client\\KeyMgr.cpp",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.cpp",
+              "RelativeToolTip": "Client\\KeyMgr.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-22T13:02:00.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KeyMgr.h",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.h",
+              "RelativeDocumentMoniker": "Client\\KeyMgr.h",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\KeyMgr.h",
+              "RelativeToolTip": "Client\\KeyMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-22T13:01:57.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\main.cpp",
+              "RelativeDocumentMoniker": "Client\\main.cpp",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\main.cpp",
+              "RelativeToolTip": "Client\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-19T07:04:52.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Core.h",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.h",
+              "RelativeDocumentMoniker": "Client\\Core.h",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.h",
+              "RelativeToolTip": "Client\\Core.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-19T07:03:54.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Core.cpp",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.cpp",
+              "RelativeDocumentMoniker": "Client\\Core.cpp",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Core.cpp",
+              "RelativeToolTip": "Client\\Core.cpp",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwDkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-05T07:54:53.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Object.h",
+              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.h",
+              "RelativeDocumentMoniker": "Client\\Object.h",
+              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.h",
+              "RelativeToolTip": "Client\\Object.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-05T07:53:09.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Object.cpp",
               "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Object.cpp",
               "RelativeDocumentMoniker": "Client\\Object.cpp",
@@ -59,33 +206,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "struct.h",
               "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\struct.h",
               "RelativeDocumentMoniker": "Client\\struct.h",
               "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\struct.h",
               "RelativeToolTip": "Client\\struct.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-04T14:01:56.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T14:01:56.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "define.h",
-              "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\define.h",
-              "RelativeDocumentMoniker": "Client\\define.h",
-              "ToolTip": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\define.h",
-              "RelativeToolTip": "Client\\define.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-04T14:01:55.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "pch.h",
               "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\pch.h",
               "RelativeDocumentMoniker": "Client\\pch.h",
@@ -93,12 +226,11 @@
               "RelativeToolTip": "Client\\pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-04T14:01:54.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T14:01:54.569Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "Client.h",
               "DocumentMoniker": "D:\\\uBC14\uD0D5\uD654\uBA74\\Project\\StudywinAPI\\Client\\Client.h",
               "RelativeDocumentMoniker": "Client\\Client.h",
@@ -106,8 +238,7 @@
               "RelativeToolTip": "Client\\Client.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-04T14:00:36.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T14:00:36.607Z"
             }
           ]
         }

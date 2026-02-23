@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "Core.h"
 #include "Object.h"
-
+#include "TimerMgr.h"
+#include "KeyMgr.h"
 
 Object gObj;
 
@@ -28,8 +29,13 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 
 	hDC = GetDC(hWnd);
 
-	//gObj.position = POINT{ resolution.x / 2, resolution.y / 2 };
-	//gObj.scale = POINT{ 100, 100 };
+	// Manager 초기화
+	TimerMgr::Instance()->Init();
+	KeyMgr::Instance()->Init();
+
+
+	gObj.SetPos(Vec2((float)(resolution.x / 2), (float)(resolution.y / 2)));
+	gObj.SetScale(Vec2(100, 100));
 
 
 	return S_OK;
@@ -37,26 +43,38 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 
 void Core::Progress()
 {
+	// Manager 업데이트
+	TimerMgr::Instance()->Update();
+
 	Update();
 	Render();
 }
 
 void Core::Update()
 {
+	Vec2 pos = gObj.GetPos();
+
 	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 	{
-		//gObj.position.x -= 1;
+		pos.x -= 200.f * fDeltaTime;
 	}
 
-	if(GetAsyncKeyState(VK_RIGHT) & 0x8000)
+	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 	{
-		//gObj.position.x += 1;
+		pos.x += 200.f * TimerMgr::Instance()->GetFDeltaTime();
 	}
+
+	gObj.SetPos(pos);
 }
 
 void Core::Render()
 {
-	/*Rectangle(hDC, gObj.position.x - gObj.scale.x / 2, gObj.position.y - gObj.scale.y / 2
-		, gObj.position.x + gObj.scale.x / 2, gObj.position.y + gObj.scale.y / 2);*/
+	Vec2 pos = gObj.GetPos();
+	Vec2 scale = gObj.GetScale();
+
+	Rectangle(hDC, int(pos.x - scale.x / 2.f)
+				 , int(pos.y - scale.y / 2.f)
+				 , int(pos.x + scale.x / 2.f)
+				 , int(pos.y + scale.y / 2.f));
 }
 
