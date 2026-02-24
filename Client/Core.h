@@ -8,6 +8,9 @@ private:
 	POINT resolution;	// ÇØ»óµµ
 	HDC hDC;			// Device Context
 
+	HBITMAP backBuffer;	// Double Buffering
+	HDC backDC;
+
 public:
 	int Init(HWND _hWnd, POINT _resolution);
 	void Progress();
