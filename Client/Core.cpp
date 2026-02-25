@@ -55,6 +55,8 @@ void Core::Progress()
 {
 	// Manager 업데이트
 	TimerMgr::Instance()->Update();
+	KeyMgr::Instance()->Update();
+
 
 	Update();
 	Render();
@@ -64,12 +66,12 @@ void Core::Update()
 {
 	Vec2 pos = gObj.GetPos();
 
-	if (GetAsyncKeyState(VK_LEFT) & 0x8000)
+	if (KeyMgr::Instance()->GetKeyState(KEY::LEFT) == KEY_STATE::HOLD)
 	{
 		pos.x -= 200.f * fDeltaTime;
 	}
 
-	if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+	if (KeyMgr::Instance()->GetKeyState(KEY::RIGHT) == KEY_STATE::HOLD)
 	{
 		pos.x += 200.f * TimerMgr::Instance()->GetFDeltaTime();
 	}
