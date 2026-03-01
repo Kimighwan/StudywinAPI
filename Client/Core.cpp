@@ -3,18 +3,17 @@
 #include "Object.h"
 #include "TimerMgr.h"
 #include "KeyMgr.h"
+#include "SceneMgr.h"
 
-Object gObj;
 
-
-Core::Core() : hWnd(0), resolution{}, hDC(0), backBuffer(0), backDC(0)
+Core::Core() : hWnd(0), resolution{}, hMainDC(0), backBuffer(0), backDC(0)
 {
 
 }
 
 Core::~Core()
 {
-	ReleaseDC(hWnd, hDC);
+	ReleaseDC(hWnd, hMainDC);
 	
 	DeleteDC(backDC);
 	DeleteObject(backBuffer);
@@ -30,11 +29,11 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 	AdjustWindowRect(&rect, WS_OVERLAPPEDWINDOW, true);
 	SetWindowPos(hWnd, nullptr, 0, 0, rect.right - rect.left, rect.bottom - rect.top, 0);
 
-	hDC = GetDC(hWnd);
+	hMainDC = GetDC(hWnd);
 
 	// Double Buffering을 위한 BITMAP과 DC 생성
-	backBuffer = CreateCompatibleBitmap(hDC, resolution.x, resolution.y);
-	backDC = CreateCompatibleDC(hDC);
+	backBuffer = CreateCompatibleBitmap(hMainDC, resolution.x, resolution.y);
+	backDC = CreateCompatibleDC(hMainDC);
 
 	HBITMAP hOldBit = (HBITMAP)SelectObject(backDC, backBuffer);
 	DeleteObject(hOldBit);
@@ -42,14 +41,12 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 	// Manager 초기화
 	TimerMgr::Instance()->Init();
 	KeyMgr::Instance()->Init();
-
-
-	gObj.SetPos(Vec2((float)(resolution.x / 2), (float)(resolution.y / 2)));
-	gObj.SetScale(Vec2(100, 100));
+	SceneMgr::Instance()->Init();
 
 
 	return S_OK;
 }
+
 
 void Core::Progress()
 {
@@ -58,40 +55,16 @@ void Core::Progress()
 	KeyMgr::Instance()->Update();
 
 
-	Update();
-	Render();
-}
+	SceneMgr::Instance()->Update();
 
-void Core::Update()
-{
-	Vec2 pos = gObj.GetPos();
+#pragma region Rendering
 
-	if (KeyMgr::Instance()->GetKeyState(KEY::LEFT) == KEY_STATE::HOLD)
-	{
-		pos.x -= 200.f * fDeltaTime;
-	}
-
-	if (KeyMgr::Instance()->GetKeyState(KEY::RIGHT) == KEY_STATE::HOLD)
-	{
-		pos.x += 200.f * TimerMgr::Instance()->GetFDeltaTime();
-	}
-
-	gObj.SetPos(pos);
-}
-
-void Core::Render()
-{
 	// 화면 Clear
 	Rectangle(backDC, -1, -1, resolution.x + 1, resolution.y + 1);
 
-	Vec2 pos = gObj.GetPos();
-	Vec2 scale = gObj.GetScale();
+	SceneMgr::Instance()->Render(backDC);
 
-	Rectangle(backDC, int(pos.x - scale.x / 2.f)
-				 , int(pos.y - scale.y / 2.f)
-				 , int(pos.x + scale.x / 2.f)
-				 , int(pos.y + scale.y / 2.f));
+	BitBlt(hMainDC, 0, 0, resolution.x, resolution.y, backDC, 0, 0, SRCCOPY);
 
-	BitBlt(hDC, 0, 0, resolution.x, resolution.y, backDC, 0, 0, SRCCOPY);
+#pragma endregion
 }
-

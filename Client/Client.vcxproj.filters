@@ -34,6 +34,18 @@
     <Filter Include="Engine\03. Manager\KeyMgr">
       <UniqueIdentifier>{88ae7f50-1ba1-4bf7-ad09-d62d3958366a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\05. Scene">
+      <UniqueIdentifier>{361cc55b-460a-462d-86a7-d675f8a08f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\SceneMgr">
+      <UniqueIdentifier>{bd085d16-c645-4832-a3fd-e500e0d87ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Scene\Scene_Logo">
+      <UniqueIdentifier>{4495bdbd-fdbb-40bf-8a42-8a31a7b9746a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Scene\Scene_Tool">
+      <UniqueIdentifier>{ccfabb8d-c4e4-430d-9df2-d06e007d5375}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -69,6 +81,15 @@
     <ClInclude Include="KeyMgr.h">
       <Filter>Engine\03. Manager\KeyMgr</Filter>
     </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>Engine\03. Manager\SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneLogo.h">
+      <Filter>Engine\05. Scene\Scene_Logo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Client.rc">
@@ -98,6 +119,15 @@
     </ClCompile>
     <ClCompile Include="KeyMgr.cpp">
       <Filter>Engine\03. Manager\KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\05. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>Engine\03. Manager\SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLogo.cpp">
+      <Filter>Engine\05. Scene\Scene_Logo</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
