@@ -7,6 +7,11 @@
 #define FDeltaTime TimerMgr::Instance()->GetFDeltaTime()
 #define DeltaTime TimerMgr::Instance()->GetDeltaTime()
 
+#define KEY_CHECK(key, state) KeyMgr::Instance()->GetKeyState(key) == state
+#define KEY_DOWN(key) KEY_CHECK(key, KEY_STATE::DOWN)
+#define KEY_HOLD(key) KEY_CHECK(key, KEY_STATE::HOLD)
+#define KEY_UP(key) KEY_CHECK(key, KEY_STATE::UP)
+
 enum class OBJECT_TYPE
 {
 	DEFAULT,

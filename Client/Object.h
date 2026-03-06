@@ -18,7 +18,7 @@ public:
 	Vec2 GetPos() { return position; }
 	Vec2 GetScale() { return scale; }
 
-	void Update();
-	void Render(HDC backDC);
+	virtual void Update() = 0;
+	virtual void Render(HDC backDC);
 };
 

@@ -14,5 +14,6 @@ public:
 	void Init();
 	void Update();
 	void Render(HDC backDC);
+	Scene* GetCurScene() { return currentScene; }
 };
 

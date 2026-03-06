@@ -8,12 +8,6 @@ private:
 	vector<Object*> objects[(int)OBJECT_TYPE::COUNT];
 	wstring sceneName;
 
-protected:
-	void AddObject(Object* obj, OBJECT_TYPE type)
-	{
-		objects[(int)type].push_back(obj);
-	}
-
 public:
 	Scene();
 	virtual ~Scene();
@@ -26,4 +20,9 @@ public:
 
 	void Update();
 	void Render(HDC backDC);
+
+	void AddObject(Object* obj, OBJECT_TYPE type)
+	{
+		objects[(int)type].push_back(obj);
+	}
 };

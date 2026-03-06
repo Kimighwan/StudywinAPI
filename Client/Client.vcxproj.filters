@@ -46,6 +46,15 @@
     <Filter Include="Engine\05. Scene\Scene_Tool">
       <UniqueIdentifier>{ccfabb8d-c4e4-430d-9df2-d06e007d5375}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\04. Object\Player">
+      <UniqueIdentifier>{23151e75-957a-4d13-a6ef-442bb6c58d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Object\Enemy">
+      <UniqueIdentifier>{8270f54d-7db4-44fb-8cf8-e9cd41a6798c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Object\Bullet">
+      <UniqueIdentifier>{d7867c0b-0346-4277-85ae-b694f9490668}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -90,6 +99,15 @@
     <ClInclude Include="SceneLogo.h">
       <Filter>Engine\05. Scene\Scene_Logo</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Engine\04. Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Engine\04. Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Engine\04. Object\Bullet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Client.rc">
@@ -128,6 +146,15 @@
     </ClCompile>
     <ClCompile Include="SceneLogo.cpp">
       <Filter>Engine\05. Scene\Scene_Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Engine\04. Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Engine\04. Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Engine\04. Object\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
