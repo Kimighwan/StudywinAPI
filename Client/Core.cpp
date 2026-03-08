@@ -1,9 +1,10 @@
 #include "pch.h"
 #include "Core.h"
-#include "Object.h"
+
 #include "TimerMgr.h"
 #include "KeyMgr.h"
 #include "SceneMgr.h"
+#include "PathMgr.h"
 
 
 Core::Core() : hWnd(0), resolution{}, hMainDC(0), backBuffer(0), backDC(0)
@@ -24,21 +25,22 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 	hWnd = _hWnd;
 	resolution = _resolution;
 
-	// resolution¿¡ ¸Â°Ô À©µµ¿ì Å©±â Á¶Á¤
+	// resolutionì— ë§ê²Œ ìœˆë„ìš° í¬ê¸° ì¡°ì •
 	RECT rect = { 0, 0, resolution.x, resolution.y };
 	AdjustWindowRect(&rect, WS_OVERLAPPEDWINDOW, true);
 	SetWindowPos(hWnd, nullptr, 0, 0, rect.right - rect.left, rect.bottom - rect.top, 0);
 
 	hMainDC = GetDC(hWnd);
 
-	// Double BufferingÀ» À§ÇÑ BITMAP°ú DC »ı¼º
+	// Double Bufferingì„ ìœ„í•œ BITMAPê³¼ DC ìƒì„±
 	backBuffer = CreateCompatibleBitmap(hMainDC, resolution.x, resolution.y);
 	backDC = CreateCompatibleDC(hMainDC);
 
 	HBITMAP hOldBit = (HBITMAP)SelectObject(backDC, backBuffer);
 	DeleteObject(hOldBit);
 
-	// Manager ÃÊ±âÈ­
+	// Manager ì´ˆê¸°í™”
+	PathMgr::Instance()->Init();
 	TimerMgr::Instance()->Init();
 	KeyMgr::Instance()->Init();
 	SceneMgr::Instance()->Init();
@@ -50,7 +52,7 @@ int Core::Init(HWND _hWnd, POINT _resolution)
 
 void Core::Progress()
 {
-	// Manager ¾÷µ¥ÀÌÆ®
+	// Manager ì—…ë°ì´íŠ¸
 	TimerMgr::Instance()->Update();
 	KeyMgr::Instance()->Update();
 
@@ -59,12 +61,14 @@ void Core::Progress()
 
 #pragma region Rendering
 
-	// È­¸é Clear
+	// í™”ë©´ Clear
 	Rectangle(backDC, -1, -1, resolution.x + 1, resolution.y + 1);
 
 	SceneMgr::Instance()->Render(backDC);
 
 	BitBlt(hMainDC, 0, 0, resolution.x, resolution.y, backDC, 0, 0, SRCCOPY);
+
+	//TimerMgr::Instance()->Render();
 
 #pragma endregion
 }

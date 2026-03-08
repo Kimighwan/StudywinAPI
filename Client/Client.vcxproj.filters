@@ -55,6 +55,21 @@
     <Filter Include="Engine\04. Object\Bullet">
       <UniqueIdentifier>{d7867c0b-0346-4277-85ae-b694f9490668}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine\06. Resource">
+      <UniqueIdentifier>{a043cfe6-fc68-4fbb-9784-63e7299e6349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Resource\Texture">
+      <UniqueIdentifier>{ece32dc1-1b68-4269-b348-cf685e394ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Resource\Sound">
+      <UniqueIdentifier>{dbe8ca49-8c5f-47b0-b9e4-0d7b660656e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\PathMgr">
+      <UniqueIdentifier>{c47d1a2e-9be6-4809-957b-566e149ea18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Manager\ResourceMgr">
+      <UniqueIdentifier>{3203e8d7-2072-4902-a3a4-976ae6b86937}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -70,9 +85,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="define.h">
-      <Filter>Engine\01. Header</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
       <Filter>Engine\01. Header</Filter>
     </ClInclude>
     <ClInclude Include="struct.h">
@@ -107,6 +119,24 @@
     </ClInclude>
     <ClInclude Include="Bullet.h">
       <Filter>Engine\04. Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CResource.h">
+      <Filter>Engine\06. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\06. Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Engine\06. Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="PathMgr.h">
+      <Filter>Engine\03. Manager\PathMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Engine\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceMgr.h">
+      <Filter>Engine\03. Manager\ResourceMgr</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +185,24 @@
     </ClCompile>
     <ClCompile Include="Bullet.cpp">
       <Filter>Engine\04. Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CResource.cpp">
+      <Filter>Engine\06. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\06. Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Engine\06. Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="PathMgr.cpp">
+      <Filter>Engine\03. Manager\PathMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Engine\01. Header</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceMgr.cpp">
+      <Filter>Engine\03. Manager\ResourceMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
